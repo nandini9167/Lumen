@@ -2,34 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/BG\ for\ Hackathon.jpg");
+    }
+</style>
+<link rel="icon" type="image/x-icon" href="/images/1.jpg">
 </head>
 
 <body>
-    <center>
-        <form action="">
-            <div class="center">
-                <label for="Fristname">Fristname</label><br>
-                <input type="text" placeholder="enter the fname"><br>
-            </div>
-            <div>
-                <label for="lastname">lastname</label><br>
-                <input type="text" placeholder="enter the lastname"><br>
-            </div>
-            <div>
-                <label for="Email">Email</label><br>
-                <input type="text" placeholder="enter the gmail"><br>
-            </div>
-            <div>
-                <label for="">phonenumber</label><br>
-                <input type="text" placeholder="enter the moblie numbers"><br>
-            </div>
-            <button>submit</button>
-    </center>
+  <div class="main">
+    <ul>
+      <li> <a href="#"> Events </a></li>
+      <li class="active"><a href="#">Create Event</a></li>
+      <li> <a href="#">Book Event</a> </li>
+    </ul>
+  </div>
+
+  
+
+  <div class="title">
+    <div>
+      <h2>Form to Create Event</h2>
+    </div>
+    <form class="form" name="myForm" action="" onsubmit="validateForm()">
+      <label for="event">Event Name:</label> <br>
+      <input type="text" id="event" name="event" required> <br>
+      <label for="location"> Location: </label> <br>
+      <input type="text" id="location" name="location" , required> <br>
+      <label for="date"> Date: </label> <br>
+      <input type="date" id="date" name="date" required> <br>
+      <label for="desc">Description of Event:</label><br>
+      <textarea id="desc" name="desc" rows='4' cols="50" required>
+
+      </textarea>
+      <input type="submit" id="submit" name="submit">
     </form>
+  </div>
+  <script src="script.js">
+  </script>
 </body>
 
 </html>
