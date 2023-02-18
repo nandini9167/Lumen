@@ -1,0 +1,51 @@
+/* apply basic styling to the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* style the heading */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* style the form */
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* style the form labels */
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* style the form inputs */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px #ccc;
+}
+
+/* style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* style the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
