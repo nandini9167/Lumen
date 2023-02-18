@@ -1,5 +1,7 @@
+// Loading mongoose library
 const mongoose = require("mongoose");
 
+// Defining Schema for Event table using mongoose
 const EventSchema = new mongoose.Schema({
   event_id: Number,
   event_name: String,
@@ -13,4 +15,5 @@ const EventSchema = new mongoose.Schema({
   max_seats: Number,
 });
 
+// Exporting Schema for use in other files
 module.exports = mongoose.models.Event || mongoose.model("Event", EventSchema);
